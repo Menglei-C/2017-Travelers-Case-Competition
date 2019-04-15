@@ -1,0 +1,35 @@
+---
+title: "2017 Travelers Case Competition"
+author: "Menglei Chen"
+date: "November 15, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+## Preparing
+
+```{r message=FALSE, warning=FALSE}
+#Load Packages
+require(xgboost)
+require(methods)
+require(data.table)
+require(magrittr)
+library(ROCR) 
+library(caret)
+library(clusterSim)
+library(Matrix)
+library(zipcode)
+
+#Options Setting
+options(na.action='na.pass')
+```
+
+##Load and Check Data
+
+```{r}
+
